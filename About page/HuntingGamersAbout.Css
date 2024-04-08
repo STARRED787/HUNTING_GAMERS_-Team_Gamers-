@@ -1,0 +1,152 @@
+@font-face {
+    font-family: my font;
+    src: url(Tarrget1.otf);
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: #efff13;
+    border-radius: 4px;
+}
+body{
+    background-color: rgb(3, 9, 29);
+    background-image: url(ezgif-5-8cb398bdba.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;     
+}
+
+:root{
+
+    --primary-color: #050e2d;
+    --secondry-color: #81ef1a;
+    --pbcolor: #da2c00;
+    --mcolor:#eb1515;
+}
+
+.dark-theme{
+    --primary-color:black;
+    --secondry-color: #f3f3f5;
+    --pbcolor:#f3f3f5;
+    --mcolor:#f3f3f5;
+}
+
+
+#icon{
+    width: 50px;
+    cursor: pointer;
+   
+}
+#icon:hover{
+    background-color:var(--mcolor);
+    box-shadow: 0 0 10px var(--mcolor);
+    border-radius: 10px;
+}
+
+header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 8PX 45px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background:var( --primary-color);
+transition: 0.5ms;
+z-index: 1000;     
+}
+
+header .logo{
+    background-attachment: fixed;
+    font-family: my font;
+    position: relative;
+    color: #df0000;
+   -webkit-text-stroke: 0.5px black;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .Navi{
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 8px;
+}
+
+header ul li a {
+    font-family: 'Victor Mono';
+    color: white;
+    text-decoration: none;
+    padding: 15PX 8px;
+    border-radius: 5px;
+
+}
+header ul li a:hover{
+    background: var(--secondry-color);
+    color: black;
+    box-shadow: 0 0 10px var(--secondry-color);
+}
+
+header .action .searchbox{
+    padding: 3px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+header .action .searchbox i{
+    font-size: 1.5em;
+    margin: 5px;
+    color: #222;
+}
+header .action .searchbox  input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #130101;
+}
+/*About*/
+
+.about{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 150px;
+    display: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .contant{
+    width: 50%;
+    margin: 10px;
+}
+.about .contant h2{
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.about .contant p{
+    font-size: 20px;
+    font-family: 'Raleway';
+    text-align: justify;
+    color: white;
+}
+.img{
+    padding: 0px 100px;
+    width: 900px;
+    min-width: 300px;
+}

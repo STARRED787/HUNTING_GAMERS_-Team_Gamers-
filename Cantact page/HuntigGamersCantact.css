@@ -1,0 +1,252 @@
+@font-face {
+    font-family: my font;
+    src: url(Tarrget1.otf);
+}
+body{
+    font-family: 'Victor Mono';
+    background-color: rgb(3, 9, 29);
+    background-image: url(wp4983330.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #01f7ff;
+    border-radius: 6px;
+}
+
+:root{
+
+    --primary-color: #050e2d;
+    --secondry-color: #81ef1a;
+    --pbcolor: #da2c00;
+    --mcolor:rgb(59, 34, 82);
+    --scoloro:aqua;
+    --c1:#93ef1a;
+    --c2: rgb(3, 9, 29);
+}
+
+.dark-theme{
+    --primary-color:black;
+    --secondry-color: #f3f3f5;
+    --pbcolor:#f3f3f5;
+    --mcolor:black;
+    --scoloro:rgb(255, 255, 255);
+    --c1:white;
+    --c2: black;
+}
+
+
+#icon{
+    width: 50px;
+    cursor: pointer;
+   
+}
+#icon:hover{
+    background-color:var(--mcolor);
+    box-shadow: 0 0 10px var(--mcolor);
+    border-radius: 10px;
+}
+
+header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 8PX 45px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background:var( --primary-color);
+transition: 0.5ms;
+z-index: 1000;     
+}
+
+header .logo{
+    background-attachment: fixed;
+    font-family: my font;
+    position: relative;
+    color: #df0000;
+   -webkit-text-stroke: 0.5px black;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .Navi{
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 8px;
+}
+
+header ul li a {
+    font-family: 'Victor Mono';
+    color: white;
+    text-decoration: none;
+    padding: 15PX 8px;
+    border-radius: 5px;
+
+}
+header ul li a:hover{
+    background: var(--secondry-color);
+    color: black;
+    box-shadow: 0 0 10px var(--secondry-color);
+}
+
+header .action .searchbox{
+    padding: 3px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+header .action .searchbox i{
+    font-size: 1.5em;
+    margin: 5px;
+    color: #222;
+}
+header .action .searchbox  input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #130101;
+}
+/* cantact page*/
+
+.cantact{
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cantact img{
+    height: 350px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cantact .form{
+    width: 20%;
+    margin: 5%;
+}
+
+ .cantact .form h1{
+    color: white;
+ }
+
+ .cantact .form .inputbx{
+    margin: 10px 0;
+ }
+
+ .cantact .form .inputbx p{
+    color: #fff;
+ }
+
+ .cantact .form .inputbx input,
+ .cantact .form .inputbx textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width:100%;
+    color: white;
+    background: var( --mcolor);
+    min-height: 15px;
+    font-size: 10px;
+ }
+
+ .cantact .form .inputbx textarea{
+    height: 150px;
+ }
+
+ .cantact .form .inputbx input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid var(--scoloro);
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+ }
+ .cantact .form .inputbx input[type="submit"]:hover{
+
+    background: var(--scoloro);
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px var(--scoloro);
+ }
+
+ /* footer page*/
+ footer{
+    padding: 10px 100px;
+    background:var(--c2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+ }
+
+ footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ footer .info .logo{
+    font-family: 'my font';
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+ }
+
+ footer .info p{
+    color: white;
+    justify-content: center;
+    text-align: center;
+ }
+
+ footer .info ul{
+   margin: 10px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+ }
+
+ footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--scoloro)
+ }
+
+ footer .info ul li:hover{
+    background: var(--c1);
+    border: none;
+    box-shadow: 0 0 10px var(--c1)
+ }
+

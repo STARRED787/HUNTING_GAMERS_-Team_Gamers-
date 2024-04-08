@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huntig Gamers</title>
+    <link rel="icon" type="images/x-icon" href="download-removebg-preview.png" />
+
+    <link rel="stylesheet" href="HuntingGamersWebSite.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Big+Shoulders+Inline+Text:wght@900&family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <div class="BodyTransistion"> </div>
+    
+    
+</head>
+
+    <header>
+
+        <a href="#" class ="logo"> Hunting Gamers</a>
+        
+        <ul class ="Navi">
+            
+        <li><a href="..\Home page\HuntingGamersWebSite.html">Home</a></li>
+        <li><a href="..\About page\HuntingGamersAbout.html">About</a></li>
+        <li><a href="..\Games page\HuntingGamersGames.html">Games</a></li>
+        <li><a href="..\Tournments page\HuntingGamersTournments.html">Tournments</a></li>
+        <li><a href="..\FAQS page\HuntingGamersFAQS.html">FAQS</a></li>
+        <li><a href="..\Cantact page\HuntigGamersCantact.html">Contact</a></li>
+        <li><a href ="..\Play page\HuntingGamersPlay.html">Play</a></li>
+
+        </ul>
+
+        <img src="moon-6689.png" id="icon">
+
+        <div class="action"> 
+            <div class="searchbox">
+                <a href="#"><i class='bx bx-search-alt 2'></i></a>
+                <input type="text" placeholder="Search The Games">
+            </div>
+          
+        </div>
+        <div class="toggle menu"></div>
+   
+    </header>
+
+
+ <!--Home Logo-->
+    <div class=" Hlogo">
+        <div class="HlogoBack">
+            <div class="Conten">
+                <h2 style="font-size: 50px;"> Welcome Gaming World</h2>
+                <p> Your ultimate destination for all things gaming ! Immerse yourself in a worldof thrilling
+                    adventures, epic battles, and endless fun. from the latest game releases and in-depth
+                reviews to expert tips and tricks, weve got you coverd Join our vibrant community of gamers and embark
+                on  an unforgettable gaming journey. Level up your gaming Experience with us! </p>
+
+                <a href="..\Loging page\HuntingGamersLoging.html" class=" button"> Loging</a>
+        </div>
+        <img src="56e354941450b8071968bf6454c31839-removebg-preview.png" >
+    </div>
+
+ <!--Js for dark mood-->
+       <script>
+        var icon = document.getElementById("icon");
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains ("dark-theme")){
+
+        icon.src= "bright.png";   
+    }else{
+        icon.src= "moon-6689.png"; 
+    }
+
+}
+    </script>
+</body>
+</html>

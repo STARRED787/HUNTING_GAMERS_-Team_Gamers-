@@ -1,0 +1,263 @@
+@font-face {
+    font-family: my font;
+    src: url(Tarrget1.otf);
+}
+body{
+    background-color: rgb(3, 9, 29);
+    background-image: url(6310977.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #01f7ff;
+    border-radius: 6px;
+}
+
+:root{
+
+    --primary-color: #050e2d;
+    --secondry-color: #81ef1a;
+    --c1: rgb(0, 255, 136);
+    --c2:rgb(248, 140, 16);
+    --c3:rgb(255, 0, 76);
+    --c4:#004883;
+    --c5:black;
+    --c6: #002e53;
+    --c7:black;
+}
+
+.dark-theme{
+    --primary-color:black;
+    --secondry-color: #f3f3f5;
+    --c1:#f3f3f5;
+    --c2:#f3f3f5;
+    --c3:#f3f3f5;
+    --c4:black;
+    --c5:white;
+    --c6:black;
+    --c7:white;
+}
+
+
+#icon{
+    width: 50px;
+    cursor: pointer;
+   
+}
+#icon:hover{
+    background-color:var(--mcolor);
+    box-shadow: 0 0 10px var(--mcolor);
+    border-radius: 10px;
+}
+
+
+header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 8PX 35px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: var(--primary-color);
+transition: 0.5ms;
+z-index: 1000;     
+}
+header .logo{
+    background-attachment: fixed;
+    font-family: my font;
+    position: relative;
+    color: #df0000;
+   -webkit-text-stroke: 0.5px black;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .Navi{
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a {
+    font-family: 'Victor Mono';
+    color: white;
+    text-decoration: none;
+    padding: 20PX 10px;
+    border-radius: 5px;
+
+}
+header ul li a:hover{
+    background: var(--secondry-color);
+    color: black;
+    box-shadow: 0 0 10px var(--secondry-color);
+}
+
+header .action .searchbox{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+header .action .searchbox i{
+    font-size: 1.5em;
+    margin: 5px;
+    color: #222;
+}
+header .action .searchbox  input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #130101;
+}
+
+/* Games page*/
+
+.games{
+    font-family: 'Raleway';
+    padding: 0 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.games h2{
+ color: #fff;
+ margin: 50px 0px;
+ height: 0px;
+}
+
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 20px;
+}
+
+.games ul li{
+    list-style: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #000000;
+    background: var(--c1);
+    color: black;
+    box-shadow: 0 0 5px var(--c1);
+}
+
+.games .crBox{
+    
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.games .crBox .cd{
+    width: 200px;
+    border-radius: 10px;
+    margin: 40px 20px;
+    background: var(--c6);
+    overflow: hidden;
+}
+.games .crBox .cd:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.games .crBox .cd img{
+    object-fit: cover;
+}
+
+.games .crBox .content h4{
+    font-weight: 800;
+    text-align: center;
+    color: #fffbfb;
+    margin: 15px 0;
+}
+
+.games .crBox .progress-line{ 
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #35407e;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.games .crBox .content .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: var(--c2) ;
+    box-shadow: 0 0 10px var(--c2);
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+    
+}
+.games .crBox .content .info{
+    border-top: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games .crBox .content .info a{
+    background-color:var(--c4);
+    align-content: center;
+    display: inline;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid var(--c7);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: var(--c5);
+    letter-spacing: 1px;
+}
+.games .crBox .content .info a:hover{
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    background: var(--c3);
+    color: black;
+    box-shadow: 0 0 5px var(--c3);
+}
+

@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huntig Gamers</title>
+    <link rel="icon" type="images/x-icon" href="download-removebg-preview.png" />
+    
+    <link rel="stylesheet" href="HuntingGamersAbout.Css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Big+Shoulders+Inline+Text:wght@900&family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Big+Shoulders+Inline+Text:wght@900&family=Bungee+Spice&family=Raleway:wght@300&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Big+Shoulders+Inline+Text:wght@900&family=Bungee+Spice&family=Raleway:wght@300&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <a href="#" class ="logo"> Hunting Gamers</a>
+        
+        <ul class ="Navi">
+            
+        <li><a href="..\Home page\HuntingGamersWebSite.html">Home</a></li>
+        <li><a href="..\About page\HuntingGamersAbout.html">About</a></li>
+        <li><a href="..\Games page\HuntingGamersGames.html">Games</a></li>
+        <li><a href="..\Tournments page\HuntingGamersTournments.html">Tournments</a></li>
+        <li><a href="..\FAQS page\HuntingGamersFAQS.html">FAQS</a></li>
+        <li><a href="..\Cantact page\HuntigGamersCantact.html">Cantact</a></li>
+        <li><a href ="..\Play page\HuntingGamersPlay.html">Play</a></li>
+        </ul>
+
+        <img src="moon-6689.png" id="icon">
+
+        <div class="action"> 
+            <div class="searchbox">
+                <a href="#"> <i class='bx bx-search-alt 2'> </i></a>
+                <input type="text" placeholder="Search The Games">
+            </div>
+          
+        </div>
+        <div class="toggle menu"></div>
+   
+    </header>
+
+    <!--About!-->
+
+    <div class="about"> 
+        <div class="contant"> 
+            <h2> About Us </h2>
+            <p> At Huntig Gamers, we're passionate about all things gaming! Whether you're a seasoned gamer or just starting your journey into the exciting world of gaming, we're here to provide you with the ultimate gaming experience. Our platform is dedicated to bringing you the latest news, reviews, and information about your favorite games, as well as introducing you to new and upcoming titles that you won't want to miss.</p>
+           </div>
+
+           <div class="img"> <img src="imag.jpg.png" alt="">
+        </div>     
+    </div>
+
+     <!--Js for dark mood-->
+     <script>
+        var icon = document.getElementById("icon");
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains ("dark-theme")){
+
+        icon.src= "bright.png";   
+    }else{
+        icon.src= "moon-6689.png"; 
+    }
+
+}
+    </script>
+</body>
+</html>

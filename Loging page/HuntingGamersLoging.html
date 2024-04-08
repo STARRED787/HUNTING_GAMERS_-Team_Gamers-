@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huntig Gamers</title>
+    <link rel="icon" type="images/x-icon" href="download-removebg-preview.png" />
+    
+    <link rel="stylesheet" href="HuntingGamersLoging.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Big+Shoulders+Inline+Text:wght@900&family=Bungee+Spice&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Big+Shoulders+Inline+Text:wght@900&family=Bungee+Spice&family=Raleway:ital,wght@0,200;1,200;1,300&family=Russo+One&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    
+    <header>
+
+        <a href="#" class ="logo"> Hunting Gamers</a>
+        
+        <ul class ="Navi">
+            
+            <li><a href="..\Home page\HuntingGamersWebSite.html">Home</a></li>
+            <li><a href="..\About page\HuntingGamersAbout.html">About</a></li>
+            <li><a href="..\Games page\HuntingGamersGames.html">Games</a></li>
+            <li><a href="..\Tournments page\HuntingGamersTournments.html">Tournments</a></li>
+            <li><a href="..\FAQS page\HuntingGamersFAQS.html">FAQS</a></li>
+            <li><a href="..\Cantact page\HuntigGamersCantact.html">Contact</a></li>
+            <li><a href ="..\Play page\HuntingGamersPlay.html">Play</a></li>
+    
+            </ul>
+    
+            <img src="moon-6689.png" id="icon">
+    
+
+        <div class="action"> 
+            <div class="searchbox">
+                <a href="#"><i class='bx bx-search-alt 2'></i></a>
+                <input type="text" placeholder="Search The Games">
+            </div>
+        </div>
+        <div class="toggle menu"></div>
+   
+    </header>
+
+    <div class="conatiner">
+        <div class="content">
+
+        <h2 class="logo"> Hunting Gamers</h2>
+            <div class="text-sci">
+            <h2> Welcome ! <br> <span> To Our Gaming World</span></h2>
+            <p>Life is a game </p>
+
+        </div>
+        </div>
+        <div class="logoreg-box">
+            <div class="form-box">
+              <form action="HuntingGamersLoging.php" method="POST">
+                <h2> Sign In</h2>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope' ></i></span>
+                    <input type="email" name="email_login" required>
+                    <label> Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"> <i class='bx bxs-lock'></i></span>
+                    <input type="password" name="pass_login" required>
+                    <label> Password</label>
+                </div>
+
+                <div class="remeber-forgot">
+                    <label> <input type="checkbox"> Remeber Me ! 
+                    </label>
+                    <br><br>
+                    <a href="#"> Forgot Password</a>
+
+                    <br><br>
+                
+                    <div class="submit">
+                        <button type="Submit" class="btn" href="#">Sign In </button>
+
+                        <div class="login-regester">
+                            <p> Don't have an account? <br><br> <a href="..\Registraion page\HuntingGamersRegistraion.html" class="Register-link"> Register Now !!!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>  
+            </div>
+        </div>
+    </div>
+      <!--Js for dark mood-->
+      <script>
+        var icon = document.getElementById("icon");
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains ("dark-theme")){
+
+        icon.src= "bright.png";   
+    }else{
+        icon.src= "moon-6689.png"; 
+    }
+
+}
+    </script>   
+    </body>
+    </html>
